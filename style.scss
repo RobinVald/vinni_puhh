@@ -1,0 +1,202 @@
+ * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: Arial;
+    background: #ffffff;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-image: url(images/background.webp);
+    background-position-y: 90%;
+    background-position-x: 60%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-style: italic;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  p {
+    color: white;
+  }
+  
+  a {
+    color: white;
+  }
+  
+  h5 {
+    color: white;
+  }
+  
+  h2 {
+    color: white;
+  }
+  
+  h3 {
+    color: white;
+  }
+  
+  h1 {
+    color: white;
+  }
+  
+  /* Header/Blog Title */
+  .slogan {
+    margin-top: -5%;
+  }
+  
+  .header {
+    padding: 30px;
+    text-align: center;
+    background-image: url(images/headback1.webp);
+    background-size: cover;
+    position: relative;
+    background-position-y: 60%;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+    color: #ffffff;
+  }
+  
+  .header h2 {
+    color: #ffffff;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    background-color: #00a3e9;
+    color: white;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.3450980392);
+    padding: 20px;
+    margin-top: 20px;
+    height: fit-content;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-size: contain;
+    background-position-y: 50%;
+    background-color: rgba(170, 170, 170, 0);
+    width: fit-content;
+    height: fit-content;
+    float: left;
+    padding: 5px;
+    display: table;
+  }
+  
+  .logo {
+    transition: transform 0.25s ease;
+  }
+  
+  .logo:hover {
+    -webkit-transform: scale(1.3); /* or some other value */
+    transform: scale(1.3);
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: rgba(0, 0, 0, 0.3450980392);
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .backtop {
+    overflow: hidden;
+    background-color: #333;
+    width: fit-content;
+  }
+  
+  /* Style the topnav links */
+  .backtop a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+  
+  /* Change color on hover */
+  .backtop a:hover {
+    background-color: #ddd;
+    color: black;
+    background-color: #00a3e9;
+    color: white;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3450980392);
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+  
